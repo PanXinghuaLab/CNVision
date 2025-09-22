@@ -25,6 +25,7 @@ devtools::install_github("PanXinghuaLab/CNVision")
  - ggsci
  - tidyverse
  - scales
+   
 Make sure these packages are installed before using CNVision.
 
 ---
