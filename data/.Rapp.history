@@ -1,0 +1,3 @@
+load("/Users/xmc/Code/CNVcaller/data/gap.rda")
+gap
+load("/Users/xmc/Code/CNVcaller/data/gap.rda")
