@@ -18,37 +18,37 @@ devtools::install_github("PanXinghuaLab/CNVision")
 ---
 
 ## 🧰 Dependencies
-	•	ggplot2
-	•	ggpubr
-	•	gghalves
-	•	ggsci
-	•	tidyverse
-	•	scales
-
+ - ggplot2
+ - ggpubr
+ - gghalves
+ - ggsci
+ - tidyverse
+ - scales
 Make sure these packages are installed before using CNVision.
 
 ---
 
 ## 🌟 Main Functions
 
-Function	Description
-CNVision()	Create a CNVision object from a directory of aligned single-cell data.
-LoadBins()	Load bin data with resolution, length, and genome reference.
-CountRead()	Count reads per bin.
-Maskbins()	Mask unreliable bins (centromere, heterochromatin, clone, contig, scaffold, short arm).
-NormalizeData()	Normalize bin counts.
-Segment()	Segment the genome based on normalized data.
-InferPloidy()	Infer ploidy using a 2D grid search approach.
-PlotPloidy()	Visualize inferred ploidy for a selected cell.
-detect_peaks()	Identify integer CNV peaks.
-laplaceMM()	Fit Laplace mixture model for CNV classification.
-plotPeaks()	Plot identified CNV peaks.
-plotCNV()	Plot CNV profile for individual cells.
+| Function      | Description |
+|---------------|-------------|
+| CNVision()    | Create a CNVision object from a directory of aligned single-cell data. |
+| LoadBins()    | Load bin data with resolution, length, and genome reference. |
+| CountRead()   | Count reads per bin. |
+| Maskbins()    | Mask unreliable bins (centromere, heterochromatin, clone, contig, scaffold, short arm). |
+| NormalizeData() | Normalize bin counts. |
+| Segment()     | Segment the genome based on normalized data. |
+| InferPloidy() | Infer ploidy using a 2D grid search approach. |
+| PlotPloidy()  | Visualize inferred ploidy for a selected cell. |
+| detect_peaks() | Identify integer CNV peaks. |
+| laplaceMM()   | Fit Laplace mixture model for CNV classification. |
+| plotPeaks()   | Plot identified CNV peaks. |
+| plotCNV()     | Plot CNV profile for individual cells. |
 
 ---
 
 ## ⚡ Quick Start
-
+```r
 library(CNVision)
 
 # 1️⃣ Create object
@@ -89,12 +89,13 @@ ggsave(paste0("~/Desktop/5K/", file, "/Peaks.pdf"), plot = p, width = 3.7, heigh
 
 p <- plotCNV(m, cell = cell, without_x = TRUE)
 ggsave(paste0("~/Desktop/5K/", file, "/", cell, "CNV.pdf"), plot = p, width = 3.7, height = 0.55, units = "in", dpi = 300)
+```
 
 ---
 
 ## ✍️ Author
-	•	Xu Mengchang
-	•	Email: 1273007233@qq.com
+- Xu Mengchang
+- Email: 1273007233@qq.com
 
 ---
 
