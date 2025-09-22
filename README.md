@@ -14,6 +14,7 @@ Install CNVision directly from GitHub:
 ```r
 # install.packages("devtools") # if not installed
 devtools::install_github("PanXinghuaLab/CNVision")
+```
 
 ---
 
