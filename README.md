@@ -15,28 +15,7 @@ Install CNVision directly from GitHub:
 # install.packages("devtools") # if not installed
 devtools::install_github("PanXinghuaLab/CNVision")
 
-## 🧰 Dependencies
-	•	ggplot2
-	•	ggpubr
-	•	gghalves
-	•	ggsci
-	•	tidyverse
-	•	scales
-
-Make sure these packages are installed before using CNVision.
-
-
-# CNVision
-
-CNVision is an R package for copy number variation (CNV) analysis, with future extensions planned for visualization. The package provides a complete workflow from raw single-cell sequencing data to CNV inference and plotting.
-
-
-## 🚀 Installation
-
-Install CNVision directly from GitHub:
-
-# install.packages("devtools") # if not installed
-devtools::install_github("PanXinghuaLab/CNVision")
+---
 
 ## 🧰 Dependencies
 	•	ggplot2
@@ -48,7 +27,7 @@ devtools::install_github("PanXinghuaLab/CNVision")
 
 Make sure these packages are installed before using CNVision.
 
-
+---
 
 ## 🌟 Main Functions
 
@@ -65,6 +44,8 @@ detect_peaks()	Identify integer CNV peaks.
 laplaceMM()	Fit Laplace mixture model for CNV classification.
 plotPeaks()	Plot identified CNV peaks.
 plotCNV()	Plot CNV profile for individual cells.
+
+---
 
 ## ⚡ Quick Start
 
@@ -109,13 +90,13 @@ ggsave(paste0("~/Desktop/5K/", file, "/Peaks.pdf"), plot = p, width = 3.7, heigh
 p <- plotCNV(m, cell = cell, without_x = TRUE)
 ggsave(paste0("~/Desktop/5K/", file, "/", cell, "CNV.pdf"), plot = p, width = 3.7, height = 0.55, units = "in", dpi = 300)
 
-
-
+---
 
 ## ✍️ Author
 	•	Xu Mengchang
 	•	Email: 1273007233@qq.com
 
+---
 
 ## 📄 License
 
